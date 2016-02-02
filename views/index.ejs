@@ -1,0 +1,14 @@
+<div class="container">
+    <form action="/" method="GET">
+        <input type="text" name="q" id="search" autofocus placeholder="Search...">
+    </form>
+    <% if (contents) { %>
+        <div id="contents">
+            <h1 id="title"><%= query %></h1>
+            <hr>
+            <%- contents %>
+        </div>
+    <% } else if (contents === null) { %>
+        <div id="contents">No results</div>
+    <% } %>
+</div>

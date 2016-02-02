@@ -13,7 +13,7 @@ app.use('/public', express.static('./public'));
 app.use(partials());
 
 app.get('/', function(req, res, next) {
-    var q = req.query.q ? req.query.q.toLowerCase() : null;
+    var q = req.query.q;
 
     if (q) {
         Api.query(q)

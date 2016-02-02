@@ -4,8 +4,6 @@ var express         = require('express');
 var partials        = require('express-partials');
 var Api             = require('./api.js');
 
-var port = 8000;
-
 var app = express();
 
 app.set('view engine', 'ejs');
@@ -36,6 +34,6 @@ app.get('/', function(req, res, next) {
     }
 });
 
-app.listen(port, '0.0.0.0', function() {
-    console.log('cro running on port ' + port);
+app.listen(8008, function() {
+    console.log('cro running);
 });

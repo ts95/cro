@@ -35,5 +35,5 @@ app.get('/', function(req, res, next) {
 });
 
 app.listen(8008, function() {
-    console.log('cro running);
+    console.log('cro running');
 });
